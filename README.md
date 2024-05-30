@@ -1,1 +1,3 @@
 # Guess-My-Number
+
+My version of Guess My Number project from Jonas Schmedtmann Javascript Course....
