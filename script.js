@@ -1,6 +1,6 @@
 'use strict';
 
-const randomNumber = Math.trunc(Math.random() * 20) + 1;
+let randomNumber = Math.trunc(Math.random() * 20) + 1;
 
 let score = 20;
 let highscore = 0;
@@ -51,6 +51,7 @@ const gameReset = function () {
   queryStrings.message.textContent = 'Start guessing...';
   queryStrings.userInput.value = 0;
   queryStrings.qstnBox.textContent = '?';
+  randomNumber = Math.trunc(Math.random() * 20) + 1;
 };
 
 const invalid = function () {
