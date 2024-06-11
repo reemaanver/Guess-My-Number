@@ -55,7 +55,7 @@ const gameReset = function () {
 };
 
 const invalid = function () {
-  queryStrings.message.textContent = 'Enter a number between 1 and 20 🤡';
+  queryStrings.message.textContent = 'enter number btw 1 & 20 🤡';
 };
 
 const noInput = function () {
