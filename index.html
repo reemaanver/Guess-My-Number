@@ -22,7 +22,7 @@
           <p class="instructions">
             Challenge yourself to guess the hidden number between 1 and 20 in as
             few attempts as possible. The fewer tries you take, the higher your
-            final score will be. Keep playing to improve your score and have
+            final score will be. Keep playing to improve your highscore and have
             fun!
           </p>
           <button class="btn again">New Game</button>
@@ -30,13 +30,14 @@
 
         <div class="right">
           <div class="flex-small">
-            <div class="qstn-mark">?</div>
+            <div class="qstn-box">?</div>
           </div>
-          <p class="right-text">Start guessing...</p>
+          <p class="message">Start guessing...</p>
           <div class="grid-middle">
-            <input type="number" />
+            <input type="number" class="input-box" />
             <button class="btn check">Check!</button>
-            <p class="score">
+
+            <div class="score-flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -46,10 +47,11 @@
               >
                 <path
                   d="M216,96A88,88,0,1,0,72,163.83V240a8,8,0,0,0,11.58,7.16L128,225l44.43,22.21A8.07,8.07,0,0,0,176,248a8,8,0,0,0,8-8V163.83A87.85,87.85,0,0,0,216,96ZM56,96a72,72,0,1,1,72,72A72.08,72.08,0,0,1,56,96ZM168,227.06l-36.43-18.21a8,8,0,0,0-7.16,0L88,227.06V174.37a87.89,87.89,0,0,0,80,0ZM128,152A56,56,0,1,0,72,96,56.06,56.06,0,0,0,128,152Zm0-96A40,40,0,1,1,88,96,40,40,0,0,1,128,56Z"
-                ></path></svg
-              >Score: 20
-            </p>
-            <p class="highscore">
+                ></path>
+              </svg>
+              <p class="score-text">Score: <span class="score">20</span></p>
+            </div>
+            <div class="highscore-flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -59,12 +61,16 @@
               >
                 <path
                   d="M232,64H208V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V64H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-29,64.64-64,64.9a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"
-                ></path></svg
-              >Highscore: 0
-            </p>
+                ></path>
+              </svg>
+              <p class="highscore-text">
+                Highscore: <span class="highscore">0</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>
