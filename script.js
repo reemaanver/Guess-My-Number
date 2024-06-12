@@ -52,6 +52,7 @@ const gameReset = function () {
   queryStrings.userInput.value = 0;
   queryStrings.qstnBox.textContent = '?';
   randomNumber = Math.trunc(Math.random() * 20) + 1;
+  queryStrings.check.classList.remove('no-box-shadow');
 };
 
 const invalid = function () {
@@ -70,6 +71,8 @@ const win = function () {
   queryStrings.check.disabled = true;
   queryStrings.qstnBox.textContent = randomNumber;
   queryStrings.userInput.value = ' ';
+  queryStrings.check.classList.add('no-box-shadow');
+
   winStyles();
 };
 
