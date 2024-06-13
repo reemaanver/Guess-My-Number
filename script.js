@@ -16,6 +16,7 @@ const queryStrings = {
   right: document.querySelector('.right'),
   again: document.querySelector('.again'),
   qstnBox: document.querySelector('.qstn-box'),
+  btn: document.querySelectorAll('.btn'),
 };
 
 queryStrings.userInput.value = 0;
@@ -25,10 +26,10 @@ const winStyles = function () {
   queryStrings.body.style.color = '#ffc470';
   queryStrings.left.style.backgroundColor = '#f6705e';
   queryStrings.right.style.backgroundColor = '#f78070';
-  queryStrings.check.style.backgroundColor = '#ffd08d';
-  queryStrings.check.style.color = '#f6705e';
-  queryStrings.again.style.backgroundColor = '#ffd08d';
-  queryStrings.again.style.color = '#f6705e';
+  for (let i = 0; i < queryStrings.btn.length; i++) {
+    queryStrings.btn[i].style.backgroundColor = '#ffd08d';
+    queryStrings.btn[i].style.color = '#f6705e';
+  }
 };
 
 const resetStyles = function () {
@@ -36,10 +37,10 @@ const resetStyles = function () {
   queryStrings.body.style.color = '#8b322c';
   queryStrings.left.style.backgroundColor = '#ffc470';
   queryStrings.right.style.backgroundColor = '#ffcc86';
-  queryStrings.check.style.backgroundColor = '#dd5746';
-  queryStrings.check.style.color = '#fff';
-  queryStrings.again.style.backgroundColor = '#dd5746';
-  queryStrings.again.style.color = '#fff';
+  for (let i = 0; i < queryStrings.btn.length; i++) {
+    queryStrings.btn[i].style.backgroundColor = '#dd5746';
+    queryStrings.btn[i].style.color = '#fff';
+  }
 };
 
 const gameReset = function () {
