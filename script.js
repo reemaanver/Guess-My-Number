@@ -1,7 +1,6 @@
 'use strict';
 
 let randomNumber = Math.trunc(Math.random() * 20) + 1;
-
 let score = 20;
 let highscore = 0;
 
@@ -113,10 +112,6 @@ const gamePlay = function () {
   }
 };
 
-queryStrings.check.addEventListener('click', function () {
-  gamePlay();
-});
+queryStrings.check.addEventListener('click', gamePlay);
 
-document.querySelector('.again').addEventListener('click', function () {
-  gameReset();
-});
+queryStrings.again.addEventListener('click', gameReset);
