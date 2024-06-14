@@ -92,6 +92,7 @@ const lose = function () {
   queryStrings.check.disabled = true;
   queryStrings.qstnBox.textContent = randomNumber;
   queryStrings.userInput.value = ' ';
+  queryStrings.check.classList.add('no-box-shadow');
 };
 
 const gamePlay = function () {
@@ -115,3 +116,11 @@ const gamePlay = function () {
 queryStrings.check.addEventListener('click', gamePlay);
 
 queryStrings.again.addEventListener('click', gameReset);
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    if (!queryStrings.check.classList.contains('no-box-shadow')) {
+      gamePlay();
+    }
+  }
+});
