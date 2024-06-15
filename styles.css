@@ -8,11 +8,13 @@ body {
   background-color: #dd5746;
   font-family: 'Montserrat', sans-serif;
   color: #8b322c;
-  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  margin: 20px auto;
   width: 1125px;
   box-shadow: 0 20px 10px rgba(0, 0, 0, 0.176);
 }
